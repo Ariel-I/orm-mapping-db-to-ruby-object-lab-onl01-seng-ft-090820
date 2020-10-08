@@ -64,6 +64,8 @@ class Student
    LIMIT 1 
    SQL
     
+   DB[:conn].execute(sql)
+     
   end 
   
   def self .first_student_in_grade_10
@@ -79,7 +81,7 @@ class Student
   end 
   
   
-  def self.all_students_in_grade_x
+  def self.all_students_in_grade_X
     sql = <<-SQL
     SELECT *
     FROM students 
