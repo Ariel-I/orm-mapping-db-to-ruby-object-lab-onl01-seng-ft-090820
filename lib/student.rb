@@ -42,7 +42,8 @@ class Student
     SQL
     
     DB[:conn].execute(sq1, name, grade).map do |row|
-      
+      self.all_students_in_grade_9
+    end
   end 
   
   def self.students_below_12th_grade
