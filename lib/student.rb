@@ -68,6 +68,8 @@ class Student
     
   end 
   
+  def 
+  
   def self.all_students_in_grade_x
     sql = <<-SQL
     SELECT *
