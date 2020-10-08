@@ -62,8 +62,8 @@ class Student
   end 
   
   def self .first_student_in_grade_10
-     sql = <<-SQL
-    SELECT *
+    sql = <<-SQL
+    SELECT name, grade
     FROM students
     WHERE grade = 10
     LIMIT 1
@@ -72,9 +72,6 @@ class Student
     DB[:conn].execute(sql)
     
   end 
-  
-
-  
   
   
   def self.all_students_in_grade_x
